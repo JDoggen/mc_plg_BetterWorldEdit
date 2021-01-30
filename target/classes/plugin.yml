@@ -1,0 +1,29 @@
+name: BetterWorldEditPlugin
+version: 0.1.0
+main: com.backslide999.betterworldedit.BetterWorldEditPlugin
+api-version: 1.13
+author: Backslide999
+description: Add some small quality of life improvments to WE
+
+harddepend: [WorldEdit]
+softdepend: [PlaceholderAPI, WorldGuard]
+
+commands:
+
+  uncraft:
+    description: Main plugin command
+    aliases: [uc]
+    permission-message: §cYou do not have permission to use that command!
+    usage: §9/autopickup help
+
+permissions:
+
+  bwe.*:
+    description: Allows all Better World edit commands
+    default: op
+    children:
+      bwe.show: true
+
+    bwe.show:
+      description: Allows viewing the current selection
+      default: op

@@ -1,0 +1,14 @@
+messages:
+  prefix:
+    info: "§7[§aUncraft§7] §e"
+    warning: "§7[§aUncraft§7] §c"
+  warning:
+    unauthorized: "You're not authorized to execute that command"
+    no_command_line: "You can't run that command from the commandline"
+    make_selection_first: "Make a selection first"
+
+  info:
+    reload_success: "Reload succesful!"
+  help:
+    - //bwe help - Show help
+    - //show - View the current selection

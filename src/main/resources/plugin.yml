@@ -1,0 +1,43 @@
+name: BetterWorldEditPlugin
+version: 0.1.0
+main: com.backslide999.betterworldedit.BetterWorldEditPlugin
+api-version: 1.13
+author: Backslide999
+description: Add some small quality of life improvments to WE
+
+harddepend: [WorldEdit]
+softdepend: [PlaceholderAPI, WorldGuard]
+
+commands:
+
+  /show:
+    description: show current selected region
+    permission-message: §cYou do not have permission to use that command!
+
+  bwe:
+    description: base command for some plugin-specific commands
+    permission-message: §cYou do not have permission to use that command!
+
+permissions:
+
+  bwe.*:
+    description: Allows all Better World edit commands
+    default: op
+    children:
+      bwe.show: true
+      bwe.reload: true
+
+  bwe.use:
+    description: Allows all usage commands
+    default: op
+    children:
+      bwe.show: true
+      bwe.reload: false
+
+  bwe.show:
+    description: Allows viewing the current selection
+    default: op
+
+  bwe.reload:
+    description: Allows reloading of the plugin
+    default: op

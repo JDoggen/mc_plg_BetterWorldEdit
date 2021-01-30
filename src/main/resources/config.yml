@@ -1,0 +1,28 @@
+messages:
+  prefix:
+    info: "§7[§aBWE§7] §e"
+    warning: "§7[§aBWE§7] §c"
+  warning:
+    unauthorized: "You're not authorized to execute that command"
+    no_command_line: "You can't run that command from the commandline"
+    make_selection_first: "Make a selection first"
+    reload_error: "Something went wrong during reloading! Check log for details"
+    edge_only_cuboid_regions: "Non-cuboid regions need to be shown filled. Try //show -f"
+  info:
+    reload_success: "Reload succesful!"
+    show:
+      toggle_on: "Show toggled on"
+      toggle_off: "Show toggled off"
+  help:
+    - //bwe help - Show help
+    - //show - View the current selection
+
+
+bwe:
+  tool: "WOODEN_AXE"
+  show:
+    # material used for displaying selected region. outer_material is only used for cuboid regions
+    material: "RED_STAINED_GLASS"
+    # delay in ticks before materials should be replaced back.
+    minimum_delay: 160
+    maximum_delay: 240
